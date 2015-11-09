@@ -97,12 +97,9 @@
 		D0DB8FF21BF0ED0F00F87C26 /* QRCodeReader */ = {
 			isa = PBXGroup;
 			children = (
-				D0DB8FF31BF0ED0F00F87C26 /* AppDelegate.swift */,
+				D0DB90211BF0F08900F87C26 /* SupportFiles */,
 				D0DB8FF51BF0ED0F00F87C26 /* ViewController.swift */,
 				D0DB8FF71BF0ED0F00F87C26 /* Main.storyboard */,
-				D0DB8FFA1BF0ED0F00F87C26 /* Assets.xcassets */,
-				D0DB8FFC1BF0ED0F00F87C26 /* LaunchScreen.storyboard */,
-				D0DB8FFF1BF0ED0F00F87C26 /* Info.plist */,
 			);
 			path = QRCodeReader;
 			sourceTree = "<group>";
@@ -123,6 +120,17 @@
 				D0DB90151BF0ED1000F87C26 /* Info.plist */,
 			);
 			path = QRCodeReaderUITests;
+			sourceTree = "<group>";
+		};
+		D0DB90211BF0F08900F87C26 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D0DB8FF31BF0ED0F00F87C26 /* AppDelegate.swift */,
+				D0DB8FFF1BF0ED0F00F87C26 /* Info.plist */,
+				D0DB8FFC1BF0ED0F00F87C26 /* LaunchScreen.storyboard */,
+				D0DB8FFA1BF0ED0F00F87C26 /* Assets.xcassets */,
+			);
+			name = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
