@@ -13,6 +13,8 @@ class ViewController: UIViewController,AVCaptureMetadataOutputObjectsDelegate {
 
     
 
+    //用户显示捕捉到的二维码数据
+    //
     @IBOutlet weak var lblStatus: UILabel!
     
    
