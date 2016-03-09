@@ -9,13 +9,19 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,BMKGeneralDelegate {
 
     var window: UIWindow?
 
-
+    var _mapManager: BMKMapManager?
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        _mapManager = BMKMapManager()
+        // 如果要关注网络及授权验证事件，请设定generalDelegate参数
+        let ret = _mapManager?.start("zkegkRMu0dqSsFMwMKBS4OlV", generalDelegate: self)
+        if ret == false {
+            NSLog("manager start failed!")
+        }
         return true
     }
 

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D07E23771C8F086D0090C46B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E23761C8F086D0090C46B /* ViewController.m */; };
+		92FF902D790978A97DCBACBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E6DC371568FA5E16AF0F5A /* libPods.a */; };
 		D0CC64001C8F00A300023CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC63FF1C8F00A300023CAA /* AppDelegate.swift */; };
-		D0CC64021C8F00A300023CAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC64011C8F00A300023CAA /* ViewController.swift */; };
+		D0CC64021C8F00A300023CAA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC64011C8F00A300023CAA /* BaseViewController.swift */; };
 		D0CC64051C8F00A300023CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CC64031C8F00A300023CAA /* Main.storyboard */; };
 		D0CC64071C8F00A300023CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0CC64061C8F00A300023CAA /* Assets.xcassets */; };
 		D0CC640A1C8F00A300023CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CC64081C8F00A300023CAA /* LaunchScreen.storyboard */; };
@@ -35,11 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D07E23751C8F086D0090C46B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = BaiduMapAPITestDemo/ViewController.h; sourceTree = "<group>"; };
-		D07E23761C8F086D0090C46B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = BaiduMapAPITestDemo/ViewController.m; sourceTree = "<group>"; };
+		7A300A2FFB44B83E50F902FC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8ED07E84A12A16DF80825B51 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B6E6DC371568FA5E16AF0F5A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A269A01C9065FC00B548E9 /* BMKSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BMKSwiftDemo-Bridging-Header.h"; path = "../BMKSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		D0CC63FC1C8F00A300023CAA /* BaiduMapAPITestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduMapAPITestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0CC63FF1C8F00A300023CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0CC64011C8F00A300023CAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0CC64011C8F00A300023CAA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D0CC64041C8F00A300023CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0CC64061C8F00A300023CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0CC64091C8F00A300023CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FF902D790978A97DCBACBC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A4954802EB2E877078F0D73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6DC371568FA5E16AF0F5A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A227B9C2824571E17FD58E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8ED07E84A12A16DF80825B51 /* Pods.debug.xcconfig */,
+				7A300A2FFB44B83E50F902FC /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D07E23731C8F08330090C46B /* developer */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,12 +110,12 @@
 		D0CC63F31C8F00A300023CAA = {
 			isa = PBXGroup;
 			children = (
-				D07E23751C8F086D0090C46B /* ViewController.h */,
-				D07E23761C8F086D0090C46B /* ViewController.m */,
 				D0CC63FE1C8F00A300023CAA /* BaiduMapAPITestDemo */,
 				D0CC64131C8F00A300023CAA /* BaiduMapAPITestDemoTests */,
 				D0CC641E1C8F00A300023CAA /* BaiduMapAPITestDemoUITests */,
 				D0CC63FD1C8F00A300023CAA /* Products */,
+				7A227B9C2824571E17FD58E4 /* Pods */,
+				6A4954802EB2E877078F0D73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +132,10 @@
 		D0CC63FE1C8F00A300023CAA /* BaiduMapAPITestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D0A269A01C9065FC00B548E9 /* BMKSwiftDemo-Bridging-Header.h */,
 				D07E23731C8F08330090C46B /* developer */,
 				D0CC63FF1C8F00A300023CAA /* AppDelegate.swift */,
-				D0CC64011C8F00A300023CAA /* ViewController.swift */,
+				D0CC64011C8F00A300023CAA /* BaseViewController.swift */,
 				D0CC64031C8F00A300023CAA /* Main.storyboard */,
 			);
 			path = BaiduMapAPITestDemo;
@@ -145,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0CC64241C8F00A300023CAA /* Build configuration list for PBXNativeTarget "BaiduMapAPITestDemo" */;
 			buildPhases = (
+				459698D78D2B956645771FC8 /* Check Pods Manifest.lock */,
 				D0CC63F81C8F00A300023CAA /* Sources */,
 				D0CC63F91C8F00A300023CAA /* Frameworks */,
 				D0CC63FA1C8F00A300023CAA /* Resources */,
+				278E363CA8584D73CB33AACA /* Embed Pods Frameworks */,
+				2A42BDC3875ECDFEEFCBEA6B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,13 +289,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		278E363CA8584D73CB33AACA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A42BDC3875ECDFEEFCBEA6B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		459698D78D2B956645771FC8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0CC63F81C8F00A300023CAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D07E23771C8F086D0090C46B /* ViewController.m in Sources */,
-				D0CC64021C8F00A300023CAA /* ViewController.swift in Sources */,
+				D0CC64021C8F00A300023CAA /* BaseViewController.swift in Sources */,
 				D0CC64001C8F00A300023CAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +483,7 @@
 		};
 		D0CC64251C8F00A300023CAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED07E84A12A16DF80825B51 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -422,13 +494,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ios.swift.demo.nsvitus.BaiduMapAPITestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "BaiduMapAPITestDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BMKSwiftDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D0CC64261C8F00A300023CAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A300A2FFB44B83E50F902FC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -439,7 +512,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ios.swift.demo.nsvitus.BaiduMapAPITestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "BaiduMapAPITestDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BMKSwiftDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
